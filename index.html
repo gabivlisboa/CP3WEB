@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVault — Minha Biblioteca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ═══════════════ LOGIN SCREEN ═══════════════ -->
+  <div id="login-screen">
+    <div class="login-glow"></div>
+    <div class="login-box">
+      <div class="login-logo">GameVault</div>
+      <div class="login-tagline">Sua biblioteca de jogos</div>
+
+      <div class="field-group">
+        <label class="field-label" for="input-user">Usuário</label>
+        <input id="input-user" class="field-input" type="text" placeholder="Digite seu usuário" autocomplete="username" />
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="input-pass">Senha</label>
+        <input id="input-pass" class="field-input" type="password" placeholder="Digite sua senha" autocomplete="current-password" />
+      </div>
+
+      <div id="login-error" class="login-error">
+        ⚠ Usuário ou senha inválidos. Tente novamente.
+      </div>
+
+      <button class="btn-primary" onclick="fazerLogin()">Entrar →</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════ APP SCREEN ═══════════════ -->
+  <div id="app-screen">
+
+    <header class="app-header">
+      <div class="app-logo">GameVault</div>
+      <div class="header-right">
+        <div class="game-count">
+          <span id="count-num">0</span> jogos na lista
+        </div>
+        <button class="btn-logout" onclick="fazerLogout()">Sair</button>
+      </div>
+    </header>
+
+    <main class="app-main">
+
+      <!-- ADD PANEL -->
+      <div class="add-panel">
+        <p class="section-title">Adicionar jogo</p>
+        <div class="add-row">
+          <input id="input-novo" class="add-input" type="text" placeholder="Ex: The Witcher 3, Hollow Knight…" />
+          <div class="add-buttons">
+            <button class="btn-add-start" onclick="adicionarInicio()">↑ Início</button>
+            <button class="btn-add-end"   onclick="adicionarFim()">↓ Fim</button>
+          </div>
+        </div>
+        <div id="add-error" class="add-error">⚠ O nome do jogo não pode ser vazio.</div>
+      </div>
+
+      <!-- GAME LIST -->
+      <p class="section-title">Minha biblioteca</p>
+      <div id="game-list" class="game-list"></div>
+
+    </main>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+
+</body>
+</html>
