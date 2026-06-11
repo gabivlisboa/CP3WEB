@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #fff;
+    color: #400c4c;
 }
 
 /* LOGIN */
@@ -21,9 +21,8 @@ body {
 
 .login-box {
     width: 350px;
-    background: #fff;
+    background: #d9b9e2;
     padding: 25px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -54,6 +53,7 @@ body {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .login-error {
@@ -69,14 +69,15 @@ body {
 .btn-primary {
     width: 100%;
     padding: 10px;
-    background: #007bff;
+    background: #965da8;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .btn-primary:hover {
-    background: #0056b3;
+    background: #400c4c;
 }
 
 /* APP */
@@ -86,7 +87,7 @@ body {
 }
 
 .app-header {
-    background: #007bff;
+    background: #400c4c;
     color: white;
     padding: 15px 25px;
 
@@ -112,6 +113,7 @@ body {
     cursor: pointer;
     background: #dc3545;
     color: white;
+    border-radius: 100px;
 }
 
 .btn-logout:hover {
@@ -137,6 +139,7 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 .add-row {
@@ -164,11 +167,14 @@ body {
 }
 
 .btn-add-start {
-    background: #28a745;
+    background: #965da8;
+    border-radius: 10px;
+ 
 }
 
 .btn-add-end {
-    background: #007bff;
+    background: #400c4c;
+    border-radius: 10px;
 }
 
 .add-error {
@@ -207,7 +213,7 @@ body {
 .item-dot {
     width: 8px;
     height: 8px;
-    background: #007bff;
+    background: #965da8;
     border-radius: 50%;
 }
 
@@ -234,7 +240,7 @@ body {
 }
 
 .btn-edit {
-    background: #ffc107;
+ 
     color: black;
 }
 
